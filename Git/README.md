@@ -1,8 +1,14 @@
+### Проверить изменения
+`git status`
+
 ### Добавить все файлы в коммит
 `git add .`
 
 ### Сделать коммит
 `git commit -m "MESSAGE COMMIT"`
+
+### Хочу изменить сообщение последнего коммита!
+`git commit --amend`
 
 ### Объединение коммитов (с использованием git rebase).
 1. Ввести команду:
@@ -21,6 +27,14 @@
 1. 
 [Подробнее](https://www.google.com/search?q=git+%D0%BE%D0%B1%D1%8A%D0%B5%D0%B4%D0%B8%D0%BD%D0%B8%D1%82%D1%8C+%D0%BA%D0%BE%D0%BC%D0%BC%D0%B8%D1%82%D1%8B+%D0%B2+%D0%BE%D0%B4%D0%B8%D0%BD&sxsrf=ALeKk00BaphkNl3aL2CkVZodTNL1Ftw7Dw%3A1619593880890&ei=mAqJYILyNayEwPAPxd2mmAo&oq=git+%D0%BE%D0%B1%D1%8A%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D1%82%D1%8C+&gs_lcp=Cgdnd3Mtd2l6EAMYAjIHCCMQsQIQJzIHCCMQsQIQJzIECAAQCjIECAAQCjIECAAQCjoICAAQsQMQgwE6AggAOgQIABADOggILhCxAxCTAjoFCC4QsQM6BQgAELEDOgYIABAKEAE6CQgAELEDEAoQAToECCMQJzoECAAQQzoHCAAQsQMQQ1Dmu54BWLTkngFgxPaeAWgAcAJ4AIAB1AGIAfUOkgEGMTIuNS4xmAEBoAEBqgEHZ3dzLXdpesABAQ&sclient=gws-wiz)
 
+### Удалить локальные изменения
+1. Ввести
+    `git clean -i`
+
+2. Будет предложено удалить или что-то еще, Выбираем удалить
+
+[Подробнее](https://qna.habr.com/q/528805)
+
 
 ### Удалить последний коммит
 1. Выбрать: 
@@ -33,18 +47,10 @@
     ` git checkout -b NAME_VETKA`
 
 [Подробнее](https://tproger.ru/translations/most-common-git-screwupsquestions-and-solutions/)
-
+[Подробнее](https://pingvinus.ru/git/1581)
 
 ### Отмена коммита
 1. Отмена последнего коммита: `git reset HEAD~`
 2. Отмена нескольких коммитов: `git reset HEAD~`
-
-[Подробнее](https://pingvinus.ru/git/1581)
-
-
-### Полное удаление последнего коммита
-1. Если вы хотите полностью удалить последний коммит, включая все изменения файлов данного коммита, то используется команда:
-
-` git reset --hard HEAD~1`
 
 [Подробнее](https://pingvinus.ru/git/1581)
