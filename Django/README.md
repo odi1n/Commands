@@ -9,3 +9,6 @@
 
 ### Собрать статические файлы
 `python manage.py colectstatic`
+
+### Выполнить тесты
+`python manage.py collectstatic`
