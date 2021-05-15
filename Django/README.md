@@ -11,4 +11,4 @@
 `python manage.py colectstatic`
 
 ### Выполнить тесты
-`python manage.py collectstatic`
+`python manage.py test`
