@@ -1,13 +1,11 @@
-### Запустить [postres](./docker-composer/postgres.yml)
+### Запустить [postres](docker-compose/postgres/docker-compose.yml)
 1. Скопировать в папку файл postgres.yml
-2. Изменить название на docker-composer
-3. Выполнить
+2. Выполнить
     ```docker
     docker-composer up --build
     ```
    
 ### Получить Ip Docker
-Здесь вместо идентификатора я буду использовать имя, bridge
 ```docker
 docker network inspect bridge
 ```
