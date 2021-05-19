@@ -9,3 +9,6 @@
     
 ### Pip в requirements.txt:
 `pip freeze > requirements/requirements.txt`
+
+### Pip обновление
+`python -m pip install --upgrade pip`
