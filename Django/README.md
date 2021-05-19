@@ -10,9 +10,6 @@
 ### Собрать статические файлы
 `python manage.py colectstatic`
 
-### Выполнить тесты
-`python manage.py test`
-
 ### Venv(Виртуальное окружение)
 1. Установка
   - Linux
@@ -34,3 +31,11 @@
   - Linux
   
     `source venv/bin/activate`
+
+### Выполнить тесты
+`python manage.py test`
+
+### Посмотреть Sql Запрос
+`python manage.py sqlmigrate NAME_PROJECT NUMBER_MIGRATE`
+Пример
+`python manage.py sqlmigrate news 0001`
