@@ -12,3 +12,20 @@
 
 ### Выполнить тесты
 `python manage.py test`
+
+### Venv(Виртуальное окружение)
+1. Установка
+  - Windows
+  
+    `python -m venv venv`
+  - Linux
+  
+    `python3 -m venv venv`
+
+2. Активация
+  - Windows
+  
+    `.\venv\Scripts\activate`
+  - Linux
+  
+    `source venv/bin/activate`
