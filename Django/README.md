@@ -15,6 +15,11 @@
 
 ### Venv(Виртуальное окружение)
 1. Установка
+  - Linux
+  
+    `sudo apt-get install python3-venv`
+    
+2. Создание
   - Windows
   
     `python -m venv venv`
@@ -22,7 +27,7 @@
   
     `python3 -m venv venv`
 
-2. Активация
+3. Активация
   - Windows
   
     `.\venv\Scripts\activate`
