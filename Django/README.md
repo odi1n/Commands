@@ -32,10 +32,24 @@
   
     `source venv/bin/activate`
 
+### Debuging
+`python manage.py shell`
+
+Перейти к нужной моделе
+```python
+from blogs.models import News
+
+News(title="hi", content="Hellow World")
+news = _ # Получить значение предыдущего запроса
+news.save()
+```
+
 ### Выполнить тесты
 `python manage.py test`
 
 ### Посмотреть Sql Запрос
+
 `python manage.py sqlmigrate NAME_PROJECT NUMBER_MIGRATE`
-Пример
+
+Пример:
 `python manage.py sqlmigrate news 0001`
