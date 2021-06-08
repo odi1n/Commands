@@ -87,10 +87,10 @@ git push origin :старое_название новое_название
 
 - Чтобы восстановить ветку через некоторое время:
 
-    ```
-    git checkout -b <branchname> archive/<branchname>
-    ```
+    ```git checkout -b <branchname> archive/<branchname>```
     
+[Поподробнее](https://qastack.ru/programming/1307114/how-can-i-archive-git-branches)
+
 ## Теги
 ### Просмотр всех архивированных веток
 ```
@@ -126,3 +126,5 @@ git push origin new :old
 ```git tag -a new old^{}```
 
 вместо git tag new old(это потому, что аннотированные теги являются объектами, а легкие теги - нет, подробнее в этом ответе ).
+
+[Поподробнее](https://stackoverflow.com/questions/1028649/how-do-you-rename-a-git-tag)
