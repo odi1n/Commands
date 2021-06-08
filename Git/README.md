@@ -70,8 +70,9 @@ git push origin :старое_название новое_название
 ## Ветки
 ### Удалить ветку локально
 ```
-git branch -d branch_name
-git branch -D branch_name
+git branch --delete <branch>
+git branch -d <branch> # Shorter version
+git branch -D <branch> # Force-delete un-merged branches
 ```
 
 ### Удалить удаленную ветку
