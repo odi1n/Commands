@@ -91,6 +91,7 @@ git push origin :старое_название новое_название
     git checkout -b <branchname> archive/<branchname>
     ```
 
+## Архивация веток
 ### Просмотр всех архивированных веток
 ```
 git tag --list
