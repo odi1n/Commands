@@ -76,3 +76,17 @@ git push origin :старое_название новое_название
 
 ### Получить только удаленные
 `git branch -r`
+
+### Архивация веток
+- Для архивации и удаления ветки:
+
+    ```
+    git tag archive/<branchname> <branchname>
+    git branch -d <branchname>
+    ```
+
+- Чтобы восстановить ветку через некоторое время:
+
+    ```
+    git checkout -b <branchname> archive/<branchname>
+    ```
