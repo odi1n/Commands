@@ -68,6 +68,20 @@ git push origin :старое_название новое_название
 Во второй строчке обратите внимание на двоеточие перед старым именем ветки — это команда для удаления ветки на сервере.
 
 ## Ветки
+### Удалить ветку локально
+```
+git branch -d branch_name
+git branch -D branch_name
+```
+
+### Удалить удаленную ветку
+branch - `api1`(моя ветка)
+```
+git push origin --delete <branch>  # Git version 1.7.0 or newer
+git push origin -d <branch>        # Shorter version (Git 1.7.0 or newer)
+git push origin :<branch>          # Git versions older than 1.7.0
+```
+
 ### Получить все ветки
 `git branch -a`
 
