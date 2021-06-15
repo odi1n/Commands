@@ -7,8 +7,21 @@
 ### Сделать коммит
 `git commit -m "MESSAGE COMMIT"`
 
-### Хочу изменить сообщение последнего коммита!
+### Изменить сообщение последнего локального коммита
 `git commit --amend`
+
+### Изменить сообщение удаленного коммита
+```
+git reset —soft HEAD~1 – «откатываемся» на один коммит назад
+git commit -a -m «commit text» – делаем нужные правки и коммитимся
+git push -f origin master – отправляем в удаленный репозиторий
+```
+
+### Откатиться к указанному комиту
+`git checkout ID_коммита`
+
+[Подробнее](https://open2web.com.ua/blog/kak-vernutsya-otkatitsya-k-bolee-rannemu-kommitu.html)
+
 
 ### Объединение коммитов (с использованием git rebase).
 1. Ввести команду:
