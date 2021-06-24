@@ -1,11 +1,17 @@
-### Запустить сервер
-`python manage.py runserver`
+### Создать проект
+`django-admin startproject NAME_PROJECT`
+
+### Создать приложение
+`python manage.py startapp blog`
 
 ### Применить изменения модели
 `python manage.py makemigrations`
 
 ### Сделать миграцию
 `python manage.py migrate`
+
+### Запустить сервер
+`python manage.py runserver`
 
 ### Собрать статические файлы
 `python manage.py colectstatic`
