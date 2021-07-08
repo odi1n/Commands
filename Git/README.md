@@ -7,6 +7,9 @@
 ### Сделать коммит
 `git commit -m "MESSAGE COMMIT"`
 
+### Сделать коммит и пуш
+`git commit -am 'MESSAGE'`
+
 ### Изменить сообщение последнего локального коммита
 `git commit --amend`
 
