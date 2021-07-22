@@ -12,10 +12,14 @@
 
 
 ### Получить статус приложения
-`service postgres status`
+`service postgresql status`
 
-### Рестарт приложения
-`service postgres restart`
 
 ### Старт приложения
-`service postgres start`
+`service postgresql start`
+
+### Рестарт приложения
+`service postgresql restart`
+
+### Стоп приложения
+`service postgresql stop`
