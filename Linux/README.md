@@ -9,3 +9,13 @@
     
 ### Открыть hosts файл
 `sudo nano /etc/hosts`
+
+
+### Получить статус приложения
+`service postgres status`
+
+### Рестарт приложения
+`service postgres restart`
+
+### Старт приложения
+`service postgres start`
