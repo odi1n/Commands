@@ -1,3 +1,19 @@
+## Git ssh
+### Добавление ssh ключа
+1. Создать ключ ssh
+- [Подробнее](https://git-scm.com/book/en/v2/Git-on-the-Server-Generating-Your-SSH-Public-Key)
+- [Подробнее](https://github.community/t/key-is-invalid-you-must-supply-a-key-in-openssh-public-key-format/170135/5)
+- [Подробнее Windows](https://stackoverflow.com/questions/10476360/key-is-invalid-message-on-github)
+2. Добавить ssh на [github](https://github.com/settings/keys)
+
+### Изменить git(login-pass) на git(ssh)
+1. Получить ссылку на проект `git remote -v`
+2. Удалить ссылку на проект `git remote NAME`
+3. Добавить новую ссылку на проект - ssh `git remote add NAME URL`
+
+[Подробнее](https://www.atlassian.com/ru/git/tutorials/syncing)
+
+## Другое
 ### Проверить изменения
 `git status`
 
