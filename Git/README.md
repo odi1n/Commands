@@ -12,7 +12,10 @@
 3. Добавить новую ссылку на проект - ssh `git remote add NAME URL`
 
 [Подробнее](https://www.atlassian.com/ru/git/tutorials/syncing)
+
 [Некороткий мануал по SSH + GitHub & BitBucket (на Win, почти тоже и на Lin)](https://qna.habr.com/q/231161)
+
+[Подробная настройка под Windows](https://only-to-top.ru/blog/tools/2019-12-08-git-ssh-windows.html)
 
 ## Другое
 ### Проверить изменения
