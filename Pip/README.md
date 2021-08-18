@@ -1,3 +1,6 @@
+### Очистить VENV
+`virtualenv --clear MY_NAME`
+
 ### Pip установка
 `pip intall django`
     
