@@ -17,6 +17,14 @@
 
 [Подробная настройка под Windows](https://only-to-top.ru/blog/tools/2019-12-08-git-ssh-windows.html)
 
+### Git merge --no-ff
+#### Включить по умолчани
+`git config merge.ff false`
+
+#### Включить для ветки
+`git config branch.master.NAME '--no-ff'`
+
+
 ## Другое
 ### Проверить изменения
 `git status`
