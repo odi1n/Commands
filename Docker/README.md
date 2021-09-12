@@ -13,7 +13,11 @@ docker network inspect bridge
 
 
 ### Интересные команды
-[Подробне](https://www.codenotary.com/blog/extremely-useful-docker-commands/)
+[Подробнее](https://www.codenotary.com/blog/extremely-useful-docker-commands/)
+
+[Подробнее](https://www.digitalocean.com/community/tutorials/how-to-remove-docker-images-containers-and-volumes-ru)
+
+[Подробнее](https://devacademy.ru/article/kak-udalit-obrazy-kontieiniery-i-toma-docker)
 
 #### Убить все контейнеры
 ```
