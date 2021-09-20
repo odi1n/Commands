@@ -29,6 +29,17 @@ cat ~/.ssh/id_rsa.pub
 
 [Подробная настройка под Windows](https://only-to-top.ru/blog/tools/2019-12-08-git-ssh-windows.html)
 
+## Git create repo
+1. Создаем папку, проект: `mkdir myproject`
+2. Открываем папку: `cd myproject`
+3. Инициализируем `git init`
+4. Добавляем все файлы в индекс: `git add .`
+5. Делаем коммит: `git commit -m "Init project"
+6. Указываем репозиторий куда выливать будем: HTTP - `git remote add origin https://github.com/USERNAME/MYPROJECT.git` SSH - `git remote add origin git@github.com:USERNAME/MYPROJECT.git`
+7. Отправить изменения на удаленный репозиторий `git push -u origin master`
+
+[Подробнее](https://pingvinus.ru/git/1592)
+
 ### Git merge --no-ff
 #### Включить по умолчани
 `git config merge.ff false`
