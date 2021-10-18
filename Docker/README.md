@@ -59,6 +59,10 @@ docker system df
 ```docker
 docker stop NAME_CONTAINER
 ```
+vs
+```docker
+docker stop ID_CONTAINER
+```
 
 ### Удалить контейнер
 ```docker
