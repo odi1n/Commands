@@ -9,6 +9,7 @@
 2. [Docker](./Docker/README.md)
 
 ### Python
+1. [Python](./python/README.md)
 1. [Django](./Django/README.md)
 2. [Pip](./Pip/README.md)
 
