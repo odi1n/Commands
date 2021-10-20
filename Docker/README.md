@@ -1,11 +1,18 @@
 ## Docker
-### Запустить [postres](docker-compose/postgres/docker-compose.yml)
-1. Скопировать в папку файл postgres.yml
-2. Выполнить
-    ```docker
-    docker-composer up --build
-    ```
-   
+### Вытащить файл с Docker Container
+1. Подключение к контейнеру, для просмотра структуры проекта, что бы заполнить пути
+```docker
+docker exec -t -i <container_name> /bin/bash
+```
+2. Копируем данные из контейнера:
+```docker
+docker cp <container_name>:<пусть к проекту> <путь куда копируем на текущем сервере>
+```
+
+[Подробный пример](https://qna.habr.com/q/407474)
+[Поиск](https://www.google.com/search?q=%D0%B4%D0%BE%D1%81%D1%82%D0%B0%D1%82%D1%8C+%D1%84%D0%B0%D0%B9%D0%BB+%D1%81+docker+%D0%BA%D0%BE%D0%BD%D1%82%D0%B5%D0%B9%D0%BD%D0%B5%D1%80%D0%B0&oq=%D0%B4%D0%BE%D1%81%D1%82%D0%B0%D1%82%D1%8C+%D1%84%D0%B0%D0%B9%D0%BB+%D1%81+%D0%B4%D0%BE%D0%BA%D0%B5%D1%80+%D0%BA%D0%BE%D0%BD%D1%82&aqs=chrome.1.69i57j33i22i29i30.6359j0j7&sourceid=chrome&ie=UTF-8)
+[Подробнее](https://rtfm.co.ua/docker-skopirovat-fajl-iz-kontejnera-na-xost-mashinu-i-obratno/)
+
 ### Получить Ip Docker
 ```docker
 docker network inspect bridge
