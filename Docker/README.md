@@ -31,9 +31,28 @@ docker exec NAME_CONTAINER python3 -v
 docker images ls
 ```
 
+#### Id образов
+```docker
+docker images -a
+```
+
 #### Удаление образов
 ```docker
-docker rmi myimage
+docker rmi IMAGE IMAGE IMAGE
+```
+
+### Удаление всех образов
+```docker
+docker rmi $(docker images -a -q)
+```
+
+#### Подвешенные образы
+```docker
+docker images -f dangling=true
+```
+#### Удаление подвешенных образов
+```docker
+docker rmi $(docker images -f dangling=true -q)
 ```
 
 ### Контейнеры
@@ -73,12 +92,17 @@ docker stop ID_CONTAINER
 
 ### Удалить контейнер
 ```docker
-docker rm NAME_CONTAINER
+docker rm NAME_CONTAINER NAME_CONTAINER
 ```
 
 ### Убить все контейнеры
 ```docker
 docker kill $(docker ps -q)
+```
+
+### Удалить контейнер при выходе
+```docker
+docker run --rm image_name
 ```
 
 ### Остановить и удалить все контейнеры
@@ -124,6 +148,10 @@ docker-compose stop
 ```
 
 ### Интересные команды
+[Подробнее](https://devacademy.ru/article/kak-udalit-obrazy-kontieiniery-i-toma-docker)
+
+[Подробнее](https://www.digitalocean.com/community/tutorials/how-to-remove-docker-images-containers-and-volumes-ru)
+
 [Подробнее](https://www.codenotary.com/blog/extremely-useful-docker-commands/)
 
 [Подробнее](https://www.digitalocean.com/community/tutorials/how-to-remove-docker-images-containers-and-volumes-ru)
