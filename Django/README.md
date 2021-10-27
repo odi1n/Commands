@@ -12,6 +12,10 @@ python manage.py startapp blog
 ```
 python manage.py showmigrations
 ```
+или
+```
+python manage.py migrate core --list
+```
 
 ### Получить миграции приложения
 ```
