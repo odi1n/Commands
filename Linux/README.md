@@ -26,3 +26,46 @@
 
 ### Стоп приложения
 `service postgresql stop`
+
+
+## ZSH - Oh My ZSH
+
+### Установка zsh
+```bash
+sudo apt install zsh
+```
+[Подробнее](https://losst.ru/nastrojka-zsh-i-oh-my-zsh)
+[Подробнее](http://members.wolfram.com/meng/pages/computing/installing_and_configuring/installing_and_configuring_zsh/#.YXkjI5ozZhG)
+[]()
+[]()
+[]()
+
+### Удалить zsh
+```bash
+sudo apt-get --purge remove zsh
+```
+или
+```bash
+chsh -s /bin/bash
+```
+[Подробнее](https://ubuntugeeks.com/questions/156577/remove-zsh-from-ubuntu-16-04)
+
+### Изменить default shell
+```bash
+chsh -s /bin/bash
+```
+И перезайти в систему
+
+
+### Установка oh my zsh
+```bash 
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
+
+### Удалить oh-my-zsh
+```bash
+rm .oh-my-zsh/
+```
+
+[Подробнее](https://ohmyz.sh/#install)
+[Подроьнее](https://github.com/ohmyzsh/ohmyzsh)
