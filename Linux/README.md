@@ -74,5 +74,10 @@ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.
 rm .oh-my-zsh/
 ```
 
+### Установить плагины
+1. [Инструкция как установить](https://youtu.be/ZNHkS4EnXhQ)
+2. [Подсвечивает команды](https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md)
+3. [Авто-дополнение](https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md)
+
 [Подробнее](https://ohmyz.sh/#install)
 [Подроьнее](https://github.com/ohmyzsh/ohmyzsh)
