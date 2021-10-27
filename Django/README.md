@@ -1,20 +1,52 @@
 ### Создать проект
-`django-admin startproject NAME_PROJECT`
+```
+django-admin startproject NAME_PROJECT
+```
 
 ### Создать приложение
-`python manage.py startapp blog`
+```
+python manage.py startapp blog
+```
+
+### Получить все миграции
+```
+python manage.py showmigrations
+```
+
+### Получить миграции приложения
+```
+python manage.py showmigrations MY_APP
+```
 
 ### Применить изменения модели
-`python manage.py makemigrations`
+```
+python manage.py makemigrations
+```
 
 ### Сделать миграцию
-`python manage.py migrate`
+```
+python manage.py migrate
+```
+
+### Отменить последнюю миграцию
+```
+python migrate my_app 0010_previous_migration 
+```
+
+### Отменить все миграции
+```
+python manage.py migrate my_app zero
+```
 
 ### Запустить сервер
-`python manage.py runserver`
+```
+python manage.py runserver
+```
 
 ### Собрать статические файлы
-`python manage.py colectstatic`
+```
+python manage.py colectstatic
+```
 
 ### Venv(Виртуальное окружение)
 1. Установка
