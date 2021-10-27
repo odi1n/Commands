@@ -29,7 +29,10 @@
 
 
 ## ZSH - Oh My ZSH
-
+### Версия zsh
+```bash
+zsh --version
+```
 ### Установка zsh
 ```bash
 sudo apt install zsh
