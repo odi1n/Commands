@@ -54,6 +54,10 @@ chsh -s /bin/bash
 ```bash
 chsh -s /bin/bash
 ```
+или
+```bash
+chsh -s $(which zsh)
+```
 И перезайти в систему
 
 
