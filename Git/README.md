@@ -29,6 +29,15 @@ cat ~/.ssh/id_rsa.pub
 
 [Подробная настройка под Windows](https://only-to-top.ru/blog/tools/2019-12-08-git-ssh-windows.html)
 
+### Перенести данные в другой репозиторий
+|Переменная|значение|
+|:---|:---|
+|LINK|git@github.com:odi1n/Commands.git|
+|BRANCHES_NAME|maset develop project|
+1. Добавить новый репозиторий в проект: `git remote add origin LINK`
+2. Запушить данные в новый репозиторий `git push -u origin BRANCHES_NAME`
+    - пример `git push -u origin master`
+
 ### Удалить git init
 `rm -r .git`
 
