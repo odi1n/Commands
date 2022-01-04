@@ -23,10 +23,6 @@ docker network inspect bridge
 ```docker
 docker exec NAME_CONTAINER python3 -v
 ```
-или 
-```
-docker exec NAME_CONTAINER /bin/bash
-```
 
 ### Получить статистику по контейнерам
 ```
