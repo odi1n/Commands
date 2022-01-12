@@ -4,6 +4,10 @@
 ```docker
 docker exec -t -i <container_name> /bin/bash
 ```
+или 
+```docker
+docker exec <container_name> sh
+```
 2. Копируем данные из контейнера:
 ```docker
 docker cp <container_name>:<пусть к проекту> <путь куда копируем на текущем сервере>
@@ -92,6 +96,11 @@ docker stop NAME_CONTAINER
 vs
 ```docker
 docker stop ID_CONTAINER
+```
+
+### Остановить все контейнеры
+```docker
+docker stop $(docker ps -a -q)
 ```
 
 ### Удалить контейнер
