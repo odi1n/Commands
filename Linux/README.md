@@ -82,6 +82,11 @@ ln <original> <link>
 ```
  ln -s /etc/nginx/sites-available/default /etc/nginx/sites-enabled/
  ```
+ 
+ ### Получить лог приложения
+ ```
+ journalctl -xeu nginx.service
+ ```
 
 ## Настройки Bash
 ### ZSH
