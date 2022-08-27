@@ -33,30 +33,45 @@ kill -9 28691
 sudo nano /etc/hosts
 ```
 
+### Удалить папку с файлами
+```
+rm -rf DIRECTORY_NAME
+```
 
 ### Получить статус приложения
 ```
 service postgresql status
 ```
-
-### Удалить папку с файлами
+или
 ```
-rm -rf DIRECTORY_NAME
+systemctl status postgresql
 ```
 
 ### Старт приложения
 ```
 service postgresql start
 ```
+или
+```
+systemctl start postgresql
+```
 
 ### Рестарт приложения
 ```
 service postgresql restart
 ```
+или
+```
+systemctl restart postgresql
+```
 
 ### Стоп приложения
 ```
 service postgresql stop
+```
+или
+```
+systemctl stop postgresql
 ```
 
 ### Cоздания ссылок - ярлык
