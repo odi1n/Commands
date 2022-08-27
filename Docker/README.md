@@ -4,6 +4,10 @@
 ```docker
 docker exec -t -i <container_name> /bin/bash
 ```
+или
+```
+docker exec -it <container_name> /bin/bash
+```
 или 
 ```docker
 docker exec <container_name> sh
