@@ -59,6 +59,14 @@ service postgresql restart
 service postgresql stop
 ```
 
+### Cоздания ссылок - ярлык
+```
+ln <original> <link>
+```
+или же например
+```
+ ln -s /etc/nginx/sites-available/default /etc/nginx/sites-enabled/
+ ```
 
 ## Настройки Bash
 ### ZSH
