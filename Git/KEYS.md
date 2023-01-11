@@ -1,6 +1,6 @@
 # Keys
 
-### Добавление ssh ключа
+## Добавление ssh ключа
 
 1. Создать ключ ssh
 
@@ -23,3 +23,8 @@ cat ~/.ssh/id_rsa.pub
 ```
 
 2. Добавить ssh на [github](https://github.com/settings/keys)
+
+## Проверить подключение
+```
+ssh git@github.com
+```
