@@ -26,5 +26,5 @@ cat ~/.ssh/id_rsa.pub
 
 ## Проверить подключение
 ```
-ssh git@github.com
+ssh -T git@github.com
 ```
