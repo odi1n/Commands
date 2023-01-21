@@ -53,6 +53,12 @@ docker images -a
 docker rmi IMAGE IMAGE IMAGE
 ```
 
+#### Удаление контейнеров и образов
+```
+docker system prune
+```
+
+
 ### Удаление всех образов
 ```docker
 docker rmi $(docker images -a -q)
@@ -66,6 +72,22 @@ docker images -f dangling=true
 ```docker
 docker rmi $(docker images -f dangling=true -q)
 ```
+
+#### Очистить неиспользуемые образы - overlay
+```
+docker image prune
+```
+
+#### Очистить неиспользуемые образы - overlay
+
+По умолчанию Docker не удаляет именованные образы, даже если они не используются. Эта команда удалит неиспользуемые изображения.
+
+Обратите внимание, что каждый слой изображения представляет собой папку внутри /usr/lib/docker/overlay2/папки.
+
+```
+docker image prune --all
+```
+
 
 ### Контейнеры
 #### Запущенные контейнеры
@@ -163,6 +185,7 @@ docker-compose start
 ```docker
 docker-compose stop
 ```
+
 
 ### Интересные команды
 [Подробнее](https://devacademy.ru/article/kak-udalit-obrazy-kontieiniery-i-toma-docker)
