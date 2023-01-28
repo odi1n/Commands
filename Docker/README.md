@@ -158,6 +158,16 @@ docker rmi $(docker images -q)
 ```docker
 docker logs -f NAME_CONTAINER
 ```
+#### Выборка
+Получить за последние 30с
+```
+docker logs --since 30s -f <container_name_or_id>
+```
+
+Получить последние 20 сообщений
+```
+docker logs --tail 20 -f <container_name_or_id>
+```
 
 
 ## Docker-Compose
